@@ -1,0 +1,41 @@
+div.main_header {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span.main_header {
+	color: #ffffff;
+	font-size: 250%;
+}
+
+span.body_text {
+	font-size: 150%;
+}
+body {
+    background: url(../p3/images/orb.jpg) blue;
+    background-size: 100%;
+    color: azure;
+}
+textarea{
+    background: url(../p3/images/textarea.jpg) #1A5055;
+    border: #1A5055;
+    border-style: groove;
+    color: azure;
+}
+input[type="text"]{
+    background: url(../p3/images/textarea.jpg) #1A5055;
+    border: #1A5055;
+    border-style: groove;
+    color: azure;
+    padding-left: 2px;
+    width: 120px;
+}
+input[type="submit"]{
+    background-color: aqua;
+}
+input[type="reset"]{
+    background-color: #611E1E;
+    border: #611E1E;
+}

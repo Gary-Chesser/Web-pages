@@ -1,0 +1,71 @@
+div.main_header {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span.main_header {
+	color: #ffffff;
+	font-size: 250%;
+}
+
+span.body_text {
+	font-size: 150%;
+}
+
+.link:hover{
+	font-size: 150%;
+}
+
+
+#paying{
+	color: blue;
+}
+.container{
+  display: inline;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.container input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.sel{
+	position: absolute;
+	top: -18px;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	background-color: grey;
+	border-radius: 50%;
+}
+
+.container input:checked ~ .sel{
+	background-color: green;
+}
+
+.sel:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container input:checked ~ .sel:after {
+	display: block;
+}
+
+.container .sel:after {
+   top: 5px;
+   left: 5px;
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   background: black;
+}
+

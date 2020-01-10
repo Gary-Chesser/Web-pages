@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create an Account</title>
+        <link rel="stylesheet" href="../css/site.css">
+    </head>
+    <body>
+        <form action="https://unfinishedbusiness.app/alert.php" method="post">
+            First Name:<br>
+            <input type ="text" name="firstname">
+            <br>
+            Last Name:<br>
+            <input type="text" name="lastname">
+            <br>
+            Email Address:<br>
+            <input type="text" name="email">
+            <br>
+            Password:<br>
+            <input type="password" name="pwd">
+            <br>
+            Confirm Password:<br>
+            <input type="password" name="pwdc">
+            <br>
+            Birth Date:<br>
+            <input type="date" name="bday" value="2015-10-21" min="1970-01-01" max="2020-12-31">
+            <br><br>
+            Degree Track:<br><br>
+            <label class="container"><a href="https://www.unf.edu/ccec/computing/Computer_Science_Program.aspx" target="_blank">Computer Science</a>
+                <input type="radio" name="degree" value="cs">
+                <span class="sel"></span>
+            </label>
+            <label class="container"><a href="https://www.unf.edu/ccec/computing/Information_Science_Program.aspx" target="_blank">Information Science</a>
+                <input type="radio" name="degree" value="isci">
+                <span class="sel"></span>
+            </label>
+            <label class="container"><a href="https://www.unf.edu/ccec/computing/Information_Systems_Program.aspx" target="_blank">Information System</a>
+                <input type="radio" name="degree" value="isys">
+                <span class="sel"></span>
+            </label>
+            <label class="container"><a href="https://www.unf.edu/ccec/computing/Information_Technology_Program.aspx" target="_blank">Information Technology</a>
+                <input type="radio" name="degree" value="it">
+                <span class="sel"></span>
+            </label>
+            <br>
+            Programming Language Experience:<br>
+            <table class="langs">
+                <tr>
+                    <td>
+                        <label class="contain"><a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">C</a>
+                            <input type="checkbox" name="lang1" value="c">
+                            <span class="select"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="contain"><a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" target="_blank">C#</a>
+                            <input type="checkbox" name="lang2" value="c#">
+                            <span class="select"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="contain"><a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a>
+                            <input type="checkbox" name="lang3" value="java">
+                            <span class="select"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="contain"><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>
+                            <input type="checkbox" name="lang4" value="javascript">
+                            <span class="select"></span>
+                        </label>
+                    </td>          
+                </tr>
+                <tr>
+                    <td>
+                        <label class="contain"><a href="https://en.wikipedia.org/wiki/PHP" target="_blank">PHP</a>
+                            <input type="checkbox" name="lang5" value="php">
+                            <span class="select"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="contain"><a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python</a>
+                            <input type="checkbox" name="lang6" value="python">
+                            <span class="select"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="contain"><a href="https://en.wikipedia.org/wiki/Visual_Basic" target="_blank">Visual Basic</a> &nbsp;  
+                            <input type="checkbox" name="lang7" value="visual basic">
+                            <span class="select"></span>
+                        </label>
+                    </td>
+                    <td>
+                        <label class="contain">Other
+                            <input type="checkbox" name="lang8" value="other">
+                            <span class="select"></span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <input type="submit" value="Submit"> <input type="reset" value="Reset"><br>
+            <input type="hidden" name="username" value="260198053" /> <input type="hidden" name="to_email_address" value="n01068618@unf.edu" /> <input type="hidden" name="to_display_name" value="Gary Chesser" />
+        </form>
+        <br><a href="index.html">Personal Page</a> <a href="../index.html">ePortfolio</a>
+    </body>
+</html>

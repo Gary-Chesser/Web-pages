@@ -1,0 +1,161 @@
+div.main_header {
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span.main_header {
+	color: #ffffff;
+	font-size: 250%;
+}
+
+span.body_text {
+	font-size: 150%;
+}
+
+.link:hover{
+	font-size: 150%;
+}
+
+#me{
+	color: blue;
+}
+
+#hob{
+	color: red;
+}
+
+#edu{
+	color: green;
+}
+
+.degree{
+	font-weight: bold;
+}
+
+.diploma{
+	font-style: italic;
+}
+
+.cert{
+	text-decoration: underline;
+}
+
+.course th,td{
+	text-align:	center;
+}
+
+.langs td{
+	text-align: left;
+}
+
+.course tr:nth-child(even){
+	background-color: lightgrey;
+}
+
+.course tr:first-child{
+	background-color: blue;
+}
+
+.in{
+	list-style-type: upper-alpha;
+}
+
+.container{
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.container input{
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.sel{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 15px;
+	width: 15px;
+	background-color: grey;
+	border-radius: 50%;
+}
+
+.container input:checked ~ .sel{
+	background-color: green;
+}
+
+.sel:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.container input:checked ~ .sel:after {
+	display: block;
+}
+
+.container .sel:after {
+   top: 5px;
+   left: 5px;
+   width: 5px;
+   height: 5px;
+   border-radius: 50%;
+   background: black;
+}
+
+.contain{
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 12px;
+	cursor: pointer;
+  }
+  
+  .contain input{
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	  height: 0;
+  	  width: 0;
+  }
+  
+  .select{
+	  position: absolute;
+	  top: 0px;
+	  left: 0;
+	  height: 15px;
+	  width: 15px;
+	  background-color: grey;
+  }
+  
+  .contain input:checked ~ .select{
+	  background-color: blue;
+  }
+  
+  .select:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+  }
+  
+  .contain input:checked ~ .select:after {
+	  display: block;
+  }
+  
+  .contain .select:after {
+	left: 5px;
+	top: 2px;
+	width: 2px;
+	height: 5px;
+	border: solid white;
+	border-width: 0px 3px 3px 0px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Statistical Calculator</title>
+        <link rel="stylesheet" href="../css/site.css">
+        
+    </head>
+    <body>
+        <div id="main"><h2 id="calcT">Statistical Calculator</h2>
+        <form action="" onSubmit="return performStatistics()">
+            Enter 5 to 20 numbers (ranging in value between 0 and 100).<br>
+            Exactly one space must separate each number.<br>
+            <br>
+            <textarea id='num' rows="4" cols="50" required></textarea>
+            <p style="padding: 0 0 0 272px; line-height: 0; margin: 0; "> <input type='reset' name="Reset" value="Reset"> <input type="submit" name="Submit" value="Submit"> </p>
+            <table>
+                <tr>
+                    <td style="text-align: right;">Min: </td>
+                    <td><input type="text" id="min" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Max: </td>
+                    <td><input type="text" id="max" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Median: </td>
+                    <td><input type="text" id="median" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Mean: </td>
+                    <td><input type="text" id="mean" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Mode: </td>
+                    <td><input type="text" id="mode" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Sum: </td>
+                    <td><input type="text" id="sum" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Variance: </td>
+                    <td><input type="text" id="variance" readonly></td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">Std Dev: </td>
+                    <td><input type="text" id="stdev" readonly></td>
+                </tr>
+            </table>
+        </form>
+            
+        </br> <a href="../index.html">ePortfolio</a></div>
+        <script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
